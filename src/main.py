@@ -12,6 +12,17 @@ def main():
     for student in students:
         print(student)
 
+
+def search_student(students, keyword):
+    results = [
+        student for student in students
+        if keyword.lower() in student.name.lower()
+    ]
+    return results
+
+if __name__ == "__main__":
+    main()
+
 def add_student(students, student):
     students.append(student)
     print(f"Đã thêm sinh viên: {student}")
@@ -20,3 +31,4 @@ if __name__ == "__main__":
     main()
 
     
+
