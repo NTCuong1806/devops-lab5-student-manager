@@ -12,7 +12,11 @@ def main():
     for student in students:
         print(student)
 
-
+def add_student(students, student):
+    students.append(student)
+    print(f"Đã thêm sinh viên: {student}")
+    
 if __name__ == "__main__":
     main()
+
     
